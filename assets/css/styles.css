@@ -1,0 +1,41 @@
+/* Styles personnalisés */
+:root {
+    --primary: #000000;
+    --secondary: #ffffff;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Styles pour le calendrier */
+  .calendar {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .time-slot {
+    border: 1px solid #e5e5e5;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .time-slot:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--secondary);
+  }
+  
+  /* Styles pour les cercles de la page d'accueil */
+  .circle-link {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+  }
+  
+  .circle-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
