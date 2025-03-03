@@ -1,11 +1,11 @@
-<?php include './includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <main class="relative min-h-screen flex flex-col items-center justify-start py-12">
     <div id="redCarpet" class="fixed inset-0 bg-red-700 z-50 hidden" style="clip-path: inset(100% 0 0 0);">
         <div class="absolute inset-0 bg-gradient-to-b from-red-700 to-red-900 animate-pulse"></div>
     </div>
 
-    <div class="relative z-10 w-full max-w-6xl mx-auto">
+    <div class="relative z-10 w-full max-w-6xl mx-auto pt-20">
         <h1 class="text-4xl font-bold text-center mb-12 tracking-wide text-gray-800">SHOWROOM & RÉSERVATION</h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -54,7 +54,7 @@
 </main>
 
 <script>
-document.querySelector('a[href="showroom.php"]').addEventListener('click', function(e) {
+document.querySelector('a[href="index.php?page=showroom"]').addEventListener('click', function(e) {
     e.preventDefault();
     const redCarpet = document.getElementById('redCarpet');
     redCarpet.classList.remove('hidden');
@@ -68,7 +68,7 @@ document.querySelector('a[href="showroom.php"]').addEventListener('click', funct
         setTimeout(() => {
             document.body.style.transform = 'scale(1) translateY(0)';
             redCarpet.classList.add('hidden');
-            window.location.href = 'showroom.php';
+            window.location.href = 'index.php?page=showroom';
         }, 800);
     }, 1000);
 });
@@ -108,4 +108,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<?php include './includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
